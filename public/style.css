@@ -1,0 +1,100 @@
+body 
+{
+    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f5f8;
+}
+
+hr 
+{
+    border: none;
+    border-top: 1px solid #9beaa8;
+}
+
+
+li
+{
+    margin: 0.5em;
+    list-style-type: none;
+}
+
+.resume 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 99%;
+    margin: 0 auto;
+    padding: 0.2em;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume_left 
+{
+    flex: 1;
+    padding: 1em;
+    margin: 1em;
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.resume_profile img 
+{
+    width: 10em;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0.1em 0.1em 0.1em 3.5em;
+}
+
+.resume_right 
+{
+    flex: 2;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(241, 241, 244);
+}
+
+.text_strong
+{
+    font-weight: bold;
+}
+
+.text_green
+{
+    font-weight: normal;
+    color: #9beaa8;
+}
+
+.text_green_dark
+{
+    font-weight: bold;
+    color: #0f671e;
+}
+
+.text_graphite
+{
+    font-weight: normal;
+    color: #333333;
+}
+
+.text_white
+{
+    font-weight: normal;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) 
+{
+    .resume 
+    {
+        flex-direction: column;
+    }
+
+    .resume_left, .resume_right 
+    {
+        flex-basis: 100%;
+    }
+}
